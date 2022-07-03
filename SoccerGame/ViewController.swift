@@ -7,18 +7,70 @@
 
 import UIKit
 import RealityKit
+import Combine
 
 class ViewController: UIViewController {
     
     @IBOutlet var arView: ARView!
     
+    let fieldWidth: Float = 3.0
+    let fieldDepth: Float = 6.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
+        let anchor = AnchorEntity(plane: .horizontal, minimumBounds: [0.20, 0.20])
         
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
+        arView.scene.addAnchor(anchor)
+        
+        let fieldMeshPlane = MeshResource.generatePlane(width: fieldWidth, depth: fieldDepth)
+//        let fieldMaterial = SimpleMaterial(color: .green, isMetallic: false)
+        var fieldMaterial = SimpleMaterial()
+        fieldMaterial.color = .init(
+            tint: .white.withAlphaComponent(0.99),
+            texture: .init(try! .load(named: "grass01")))
+        
+        let fieldModel: Entity = ModelEntity(mesh: fieldMeshPlane, materials: [fieldMaterial])
+        
+        // fieldModel.generateCollisionShapes(recursive: true)
+        
+        fieldModel.position = [0, 1, 0]
+        
+        anchor.addChild(fieldModel)
+        
+        var cancellable: AnyCancellable? = nil
+        
+        cancellable = ModelEntity.loadModelAsync(named: "toy_drummer")
+            .append(ModelEntity.loadModelAsync(named: "toy_robot_vintage"))
+            .collect()
+            .sink(receiveCompletion: {error in
+                cancellable?.cancel()
+            }, receiveValue: {entities in
+                var players: [ModelEntity] = []
+                
+                let playerA = entities[0]
+                let playerB = entities[1]
+                
+                for entity in entities {
+                    entity.setScale([0.01, 0.01, 0.01], relativeTo: anchor)
+                }
+                
+                for _ in 1...11 {
+                    let playerAInstance = playerA.clone(recursive: true)
+                    players.append(playerAInstance)
+                    playerAInstance.transform.rotation = simd_quatf(angle: Float.pi, axis: [0, 1, 0])
+                    
+                    players.append(playerB.clone(recursive: true))
+                }
+                
+                for player in players {
+                    fieldModel.addChild(player)
+                    player.transform.translation.x += Float.random(in: -self.fieldWidth/2..<self.fieldWidth/2)
+                    player.transform.translation.z += Float.random(in: -self.fieldDepth/2..<self.fieldDepth/2)
+                }
+            })
+        
+        
+        
     }
 }

@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		D96BEC692870CADB002F389E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BEC682870CADB002F389E /* AppDelegate.swift */; };
 		D96BEC6B2870CADB002F389E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BEC6A2870CADB002F389E /* ViewController.swift */; };
-		D96BEC6D2870CADB002F389E /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D96BEC6C2870CADB002F389E /* Experience.rcproject */; };
 		D96BEC702870CADB002F389E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96BEC6E2870CADB002F389E /* Main.storyboard */; };
 		D96BEC722870CADD002F389E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96BEC712870CADD002F389E /* Assets.xcassets */; };
 		D96BEC752870CADD002F389E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96BEC732870CADD002F389E /* LaunchScreen.storyboard */; };
 		D96BEC7F2870CADD002F389E /* SoccerGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BEC7E2870CADD002F389E /* SoccerGameTests.swift */; };
 		D96BEC892870CADD002F389E /* SoccerGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BEC882870CADD002F389E /* SoccerGameUITests.swift */; };
 		D96BEC8B2870CADD002F389E /* SoccerGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BEC8A2870CADD002F389E /* SoccerGameUITestsLaunchTests.swift */; };
+		D96BEC9A2871153C002F389E /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D96BEC992871153C002F389E /* toy_drummer.usdz */; };
+		D96BEC9C2871156C002F389E /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D96BEC9B2871156C002F389E /* toy_robot_vintage.usdz */; };
+		D96BEC9E28713A8F002F389E /* grass01_h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D96BEC9D28713A8F002F389E /* grass01_h.jpg */; };
+		D96BECA028713A97002F389E /* grass01_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D96BEC9F28713A97002F389E /* grass01_n.jpg */; };
+		D96BECA228713AAC002F389E /* grass01_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D96BECA128713AAC002F389E /* grass01_s.jpg */; };
+		D96BECA428713AB4002F389E /* grass01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D96BECA328713AB4002F389E /* grass01.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,6 @@
 		D96BEC652870CADB002F389E /* SoccerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96BEC682870CADB002F389E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D96BEC6A2870CADB002F389E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D96BEC6C2870CADB002F389E /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		D96BEC6F2870CADB002F389E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D96BEC712870CADD002F389E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D96BEC742870CADD002F389E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +52,12 @@
 		D96BEC842870CADD002F389E /* SoccerGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96BEC882870CADD002F389E /* SoccerGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerGameUITests.swift; sourceTree = "<group>"; };
 		D96BEC8A2870CADD002F389E /* SoccerGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D96BEC992871153C002F389E /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
+		D96BEC9B2871156C002F389E /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		D96BEC9D28713A8F002F389E /* grass01_h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass01_h.jpg; sourceTree = "<group>"; };
+		D96BEC9F28713A97002F389E /* grass01_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass01_n.jpg; sourceTree = "<group>"; };
+		D96BECA128713AAC002F389E /* grass01_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass01_s.jpg; sourceTree = "<group>"; };
+		D96BECA328713AB4002F389E /* grass01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass01.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +110,14 @@
 			children = (
 				D96BEC682870CADB002F389E /* AppDelegate.swift */,
 				D96BEC6A2870CADB002F389E /* ViewController.swift */,
-				D96BEC6C2870CADB002F389E /* Experience.rcproject */,
 				D96BEC6E2870CADB002F389E /* Main.storyboard */,
 				D96BEC712870CADD002F389E /* Assets.xcassets */,
+				D96BEC9D28713A8F002F389E /* grass01_h.jpg */,
+				D96BEC9F28713A97002F389E /* grass01_n.jpg */,
+				D96BECA128713AAC002F389E /* grass01_s.jpg */,
+				D96BECA328713AB4002F389E /* grass01.jpg */,
+				D96BEC9B2871156C002F389E /* toy_robot_vintage.usdz */,
+				D96BEC992871153C002F389E /* toy_drummer.usdz */,
 				D96BEC732870CADD002F389E /* LaunchScreen.storyboard */,
 			);
 			path = SoccerGame;
@@ -230,8 +245,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96BEC752870CADD002F389E /* LaunchScreen.storyboard in Resources */,
+				D96BEC9C2871156C002F389E /* toy_robot_vintage.usdz in Resources */,
+				D96BEC9E28713A8F002F389E /* grass01_h.jpg in Resources */,
 				D96BEC722870CADD002F389E /* Assets.xcassets in Resources */,
+				D96BECA028713A97002F389E /* grass01_n.jpg in Resources */,
 				D96BEC702870CADB002F389E /* Main.storyboard in Resources */,
+				D96BECA428713AB4002F389E /* grass01.jpg in Resources */,
+				D96BEC9A2871153C002F389E /* toy_drummer.usdz in Resources */,
+				D96BECA228713AAC002F389E /* grass01_s.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +279,6 @@
 			files = (
 				D96BEC6B2870CADB002F389E /* ViewController.swift in Sources */,
 				D96BEC692870CADB002F389E /* AppDelegate.swift in Sources */,
-				D96BEC6D2870CADB002F389E /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
